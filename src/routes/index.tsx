@@ -4,7 +4,7 @@ import { CharacterGrid } from '~/components/character-grid/CharacterGrid';
 import { SearchForm } from '~/components/search-form/SearchForm';
 import { getMarvelContext, getCharacters } from '~/services/marvel';
 import type { Character } from '~/types';
-import { getTotalPages } from '~/utils/index';
+import { getTotalPages } from '~/utils';
 
 export const useSearchLoader = routeLoader$(async (requestEvent) => {
   const searchTerm = requestEvent.url.searchParams.get('search');

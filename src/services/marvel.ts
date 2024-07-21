@@ -1,7 +1,7 @@
 import type { RequestEventBase } from "@builder.io/qwik-city";
 import { Md5 } from "ts-md5";
 import type { DataWrapper, Character } from "~/types";
-import { buildSearchParams, getOffset } from "~/utils/index";
+import { buildSearchParams, getOffset } from "~/utils";
 
 export const getMarvelContext = (requestEvent: RequestEventBase) => {
   const baseURL = requestEvent.env.get("VITE_MARVEL_PUBLIC_BASE_URL");

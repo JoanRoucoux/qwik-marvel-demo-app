@@ -42,22 +42,6 @@ export type ResourceSummary = {
   role?: Nullable<string>;
 };
 
-export type TextObject = {
-  type?: Nullable<string>;
-  language?: Nullable<string>;
-  text?: Nullable<string>;
-};
-
-export type ComicDate = {
-  type?: Nullable<string>;
-  date?: Nullable<string>;
-};
-
-export type ComicPrice = {
-  type?: Nullable<string>;
-  price?: number;
-};
-
 export type Character = {
   id: number;
   name?: Nullable<string>;
@@ -72,40 +56,3 @@ export type Character = {
   events?: ResourceList;
   series?: ResourceList;
 };
-
-export type Comic = {
-  id: number;
-  digitalId?: number;
-  title?: Nullable<string>;
-  issueNumber?: number;
-  variantDescription?: Nullable<string>;
-  description?: Nullable<string>;
-  mediaType?: Nullable<string>;
-  modified?: Nullable<string>;
-  isbn?: Nullable<string>;
-  upc?: Nullable<string>;
-  diamondCode?: Nullable<string>;
-  ean?: Nullable<string>;
-  issn?: Nullable<string>;
-  format?: Nullable<string>;
-  pageCount?: number;
-  textObjects?: TextObject[];
-  resourceURI?: Nullable<string>;
-  urls?: Url[];
-  series?: ResourceSummary;
-  variants?: ResourceSummary[];
-  collections?: ResourceSummary[];
-  collectedIssues?: ResourceSummary[];
-  dates?: ComicDate[];
-  prices?: ComicPrice[];
-  thumbnail?: Image;
-  images?: Image[];
-  creators?: ResourceList;
-  characters?: ResourceList;
-  stories?: ResourceList;
-  events?: ResourceList;
-};
-
-export type Media = Character | Comic;
-
-export type MediaType = 'character' | 'comic';

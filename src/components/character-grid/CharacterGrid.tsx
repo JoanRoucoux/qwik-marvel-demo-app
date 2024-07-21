@@ -1,5 +1,5 @@
 import { component$, type QRL } from '@builder.io/qwik';
-import type { Character } from '~/types/index';
+import type { Character } from '~/types';
 import { CharacterCard } from '../character-card/CharacterCard';
 
 type Props = {

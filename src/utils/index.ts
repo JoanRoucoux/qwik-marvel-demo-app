@@ -1,4 +1,4 @@
-import type { Image } from "~/types/index";
+import type { Image } from "~/types";
 
 export const buildSearchParams = (
   query?: Record<string, unknown>,

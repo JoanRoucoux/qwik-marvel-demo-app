@@ -1,5 +1,5 @@
 import { component$ } from '@builder.io/qwik';
-import type { Nullable } from '~/types/index';
+import type { Nullable } from '~/types';
 
 type Props = {
   searchTerm: Nullable<string>;

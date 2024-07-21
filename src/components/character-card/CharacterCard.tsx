@@ -1,6 +1,6 @@
 import { component$ } from '@builder.io/qwik';
-import type { Character } from '~/types/index';
-import { getThumbnail } from '~/utils/index';
+import type { Character } from '~/types';
+import { getThumbnail } from '~/utils';
 
 type Props = {
   character: Character;
